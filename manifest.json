@@ -1,0 +1,14 @@
+{
+  "name": "Reklamefri VGTV",
+  "description": "Hopper over reklamesnuttene i videoene på VG og VGTV.",
+  "version": "1.0",
+  "icons": { "16": "16.png",
+           "48": "48.png",
+          "128": "128.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://www.vgtv.no/*","http://vgtv.no/*","http://www.vg.no/*"],
+      "js": ["jquery.js", "reklamefix.js"]
+    }
+  ]
+}
